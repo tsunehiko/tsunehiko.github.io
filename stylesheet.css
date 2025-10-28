@@ -129,3 +129,75 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  table tbody tr {
+    display: block;
+  }
+  
+  table tbody tr td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  td[style*="width:25%"],
+  td[style*="width:40%"] {
+    text-align: center;
+    padding: 10px 20px !important;
+  }
+  
+  td[style*="width:75%"],
+  td[style*="width:63%"] {
+    padding: 10px 20px !important;
+  }
+  
+  td img {
+    max-width: 70%;
+    width: auto;
+    height: auto;
+  }
+  
+  td[style*="width:40%"] img {
+    max-width: 60%;
+  }
+  
+  table[style*="max-width:800px"] {
+    width: 100% !important;
+  }
+  
+  name {
+    font-size: 28px;
+  }
+  
+  heading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  td img {
+    max-width: 80%;
+  }
+  
+  td[style*="width:40%"] img {
+    max-width: 70%;
+  }
+  
+  name {
+    font-size: 24px;
+  }
+  
+  heading {
+    font-size: 18px;
+  }
+  
+  body, td, th, tr, p, a, strong, papertitle {
+    font-size: 13px;
+  }
+}
