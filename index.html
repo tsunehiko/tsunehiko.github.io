@@ -25,13 +25,18 @@
                     <name>Tsunehiko Tanaka</name>
                   </p>
                   <p>
-                    I am working full-time as a Software Engineer at IBM, where I contribute to the development of IBM watsonx Orchestrate, and part-time as an Adjunct Researcher at Waseda University in Tokyo, Japan.
+                    I am a full-time Software Engineer at IBM, where I work on agent memory for watsonx Orchestrate.
+                    I am also a part-time Adjunct Researcher at Waseda University, where I earned my Doctor of Engineering degree in March 2026.
                   </p>
                   <p>
-                    My research focuses on sequential decision-making using reinforcement learning and planning, and on structured generation with large language models. I am also interested in applying these methods to game AI and game development.
+                    My research focuses on sequential decision-making, drawing on machine learning, computer vision, and natural language processing.
+                    Recently, I have been exploring how embodied agents can use working memory to plan and act.
+                    In my <a href="https://arxiv.org/abs/2608.20084v2">work on long-horizon robotic manipulation</a>, I combined vision-language models (VLMs) with task and motion planning (TAMP).
                   </p>
                   <p>
-                    I received my Ph.D. from Waseda University in March 2026, under the supervision of <a href="https://esslab.jp/~ess/ja/">Dr. Edgar Simo-Serra</a>. Previously, focusing on games as an application domain, I have worked on <a href="https://openreview.net/forum?id=lTt2cTW8h1">the performance control of RL agents</a> and <a href="https://arxiv.org/abs/2407.17404">board game design using LLMs</a>. Additionally, I was fortunate to have the opportunity to intern at IBM Research in 2021, where I worked on developing <a href="https://arxiv.org/abs/2211.16002">RL agents that utilize commonsense reasoning</a>. I also conducted collaborative research under <a href="https://matthewstephenson.info/">Dr. Matthew Stephenson</a> at Flinders University.
+                    During my PhD, I trained a large language model (LLM) to <a href="https://arxiv.org/abs/2503.15783">turn written board game rules into executable programs</a>.
+                    I used Group Relative Policy Optimization (GRPO) with rewards based on grammar checks and simulated gameplay.
+                    I also developed the <a href="https://arxiv.org/abs/2402.03923">Return-Aligned Decision Transformer (RADT)</a>, an offline reinforcement learning (RL) method that uses a target score to control an agent's performance for applications such as tuning the difficulty of AI opponents.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:tsunehiko@fuji.waseda.jp">Email</a> &nbsp|&nbsp
@@ -62,15 +67,27 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr>
+              <tr id="eafg">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img width="240" height="100" src="./files/teaser/eafg.png"
+                    alt="EAFG pipeline illustrated with a robot gathering evidence in a kitchen">
+                </td>
+                <td style="width:75%;vertical-align:middle">
+                  <papertitle>Evidence-Gated Task and Motion Planning with Vision-Language Models</papertitle> <br>
+                  <strong>Tsunehiko Tanaka</strong>, Matthew Stephenson, Alistair Macvicar, Edgar Simo-Serra<br>
+                  <em>arXiv preprint</em> 2026 <br>
+                  <a href="https://arxiv.org/abs/2608.20084v2">paper</a> <br>
+                </td>
+              </tr>
+              <tr id="radt">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <img width="240" height="100" align="center" src="./files/teaser/radt.png">
                 </td>
                 <td style="width:75%;vertical-align:middle">
-                  <papertitle>Return-Aligned Decision Transformer</papertitle> <br> 
-                  <strong>Tsunehiko Tanaka</strong>, Kenshi Abe, Kaito Ariu, Tetsuro Morimura, Edgar Simo-Serra. <br>
-                  <em>TMLR </em> 2025 <span style="color:red; font-weight: bold;">J2C Certification</span> <span style="color:black;"> (Presented at ICML'26) </span> <br>
-                  <a href='https://arxiv.org/abs/2402.03923'>paper</a> | <a href='https://github.com/CyberAgentAILab/radt'>code</a> | <a href='./files/poster/radt.pdf'>poster</a> | <a href="https://openreview.net/forum?id=lTt2cTW8h1">DOI</a> <br>
+                  <papertitle>Return-Aligned Decision Transformer</papertitle> <br>
+                  <strong>Tsunehiko Tanaka</strong>, Kenshi Abe, Kaito Ariu, Tetsuro Morimura, Edgar Simo-Serra<br>
+                  <em>TMLR</em> 2025 <span style="color:red; font-weight: bold;">J2C Certification</span> (presented at ICML 2026) <br>
+                  <a href='https://arxiv.org/abs/2402.03923'>paper</a> | <a href='https://github.com/CyberAgentAILab/radt'>code</a> | <a href='./files/poster/radt.pdf'>poster</a> | <a href="https://openreview.net/forum?id=lTt2cTW8h1">OpenReview</a> <br>
                 </td>
               </tr>
               <tr>
@@ -80,7 +97,7 @@
                 <td style="width:75%;vertical-align:middle">
                   <papertitle>Grammar and Gameplay-aligned RL for Game Description Generation with LLMs</papertitle> <br> 
                   <strong>Tsunehiko Tanaka</strong>, Edgar Simo-Serra<br>
-                  <em>Conference on Games</em> 2025 <br>
+                  <em>IEEE Conference on Games</em> 2025 <br>
                   <a href='https://arxiv.org/abs/2503.15783'>paper</a> | <a href='https://github.com/tsunehiko/rlgdg'>code</a> | <a href='https://ieeexplore.ieee.org/document/11114202'>DOI</a> <br>
                 </td>
               </tr>
@@ -91,19 +108,19 @@
                 <td style="width:75%;vertical-align:middle">
                   <papertitle>Grammar-based Game Description Generation using Large Language Models</papertitle> <br> 
                   <strong>Tsunehiko Tanaka</strong>, Edgar Simo-Serra<br>
-                  <em>Transactions on Games</em> 2024 <a href="https://transactions.games/cis-highlight/april-2026-cis-highlight-paper-copy"><span style="color:red; font-weight: bold;">Highlight Paper</span></a> <br>
+                  <em>IEEE Transactions on Games</em> 2024 (Early Access) <a href="https://transactions.games/cis-highlight/april-2026-cis-highlight-paper-copy"><span style="color:red; font-weight: bold;">Highlight Paper</span></a> <br>
                   <a href='https://arxiv.org/abs/2407.17404'>paper</a> | <a href='https://github.com/tsunehiko/ggdg'>code</a> | <a href='https://ieeexplore.ieee.org/document/10807354'>DOI</a> <br>
                 </td>
               </tr>
-              <tr>
+              <tr id="diffg-rl">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <img width="240" height="135" align="center" src="./files/teaser/diffg-rl.png">
                 </td>
                 <td style="width:75%;vertical-align:middle">
-                  <papertitle>DiffG-RL: Leveraging Difference between State and Common Sense</papertitle> <br>
+                  <papertitle>DiffG-RL: Leveraging Difference between Environment State and Common Sense</papertitle> <br>
                   <strong>Tsunehiko Tanaka</strong>, Daiki Kimura, Michiaki Tatsubori<br>
                   <em>Findings of EMNLP</em> 2022 <br>
-                  <a href='https://arxiv.org/abs/2211.16002'>paper</a> | <a href='https://github.com/ibm/diffg-rl'>code</a> | <a href='https://aclanthology.org/2022.findings-emnlp.110/'>DOI</a> <br>
+                  <a href='https://aclanthology.org/2022.findings-emnlp.110/'>paper</a> | <a href='https://github.com/ibm/diffg-rl'>code</a> | <a href='https://arxiv.org/abs/2211.16002'>arXiv</a> <br>
                 </td>
               </tr>
               <tr>
@@ -114,7 +131,7 @@
                   <papertitle>Commonsense Knowledge from Scene Graphs for Textual Environments</papertitle> <br> 
                   <strong>Tsunehiko Tanaka</strong>, Daiki Kimura, Michiaki Tatsubori <br>
                   <em>AAAI Workshop on Reinforcement Learning in Games</em> 2022 <br>
-                <a href="https://arxiv.org/abs/2210.14162">paper</a> | <a href="https://github.com/IBM/diffg-rl">code</a> | <a href="https://rlg.mlanctot.info/2022/papers/AAAI22-RLG_paper_28.pdf">DOI</a> <br>
+                  <a href="https://arxiv.org/abs/2210.14162">paper</a> | <a href="https://github.com/IBM/diffg-rl">code</a> | <a href="https://research.ibm.com/publications/commonsense-knowledge-from-scene-graphs-for-textual-environments">IBM Research</a> <br>
                 </td>
               </tr>
               <tr>
@@ -143,7 +160,7 @@
           <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr>
+              <tr id="patents">
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Patents</heading>
                 </td>
@@ -156,7 +173,8 @@
               <tr>
                 <td style="padding:20px 40px 20px 40px;vertical-align:middle">
                   <ul style="margin:0;padding-left:20px;">
-                    <strong>Tsunehiko Tanaka</strong>, Daiki Kimura, Michiaki Tatsubori. Extracting enriched target-oriented common sense from grounded graphs to support next step decision making. U.S. Patent 12,555,006, Issued Feb 17, 2026.
+                    <strong>Tsunehiko Tanaka</strong>, Daiki Kimura, Michiaki Tatsubori. Extracting enriched target-oriented common sense from grounded graphs to support next step decision making.
+                    <a href="https://patentsgazette.uspto.gov/week07/OG/html/1543-3/US12555006-20260217.html">U.S. Patent 12,555,006</a>, issued February 17, 2026.
                   </ul>
                 </td>
               </tr>
@@ -239,15 +257,16 @@
               <tr>
                 <td style="padding:10px 40px 10px 40px;vertical-align:middle">
                   <ul style="margin:0;padding-left:20px;">
-                      <papertitle>Waseda University, Tokyo</papertitle> (Jul 2026 - ) <br>
-                      Adjunct Researcher (part-time)
+                      <papertitle>Waseda University, Tokyo</papertitle> (Jul 2026 - Present) <br>
+                      Adjunct Researcher (part-time)<br>
+                      Continuing research on <a href="#eafg">robot planning with vision-language models</a>.
                   </ul>
                 </td>
               </tr>
               <tr>
                 <td style="padding:10px 40px 10px 40px;vertical-align:middle">
                   <ul style="margin:0;padding-left:20px;">
-                      <papertitle>IBM, Tokyo</papertitle> (Apr 2026 - ) <br>
+                      <papertitle>IBM, Tokyo</papertitle> (Apr 2026 - Present) <br>
                       Software Engineer (full-time)<br>
                       Contributing to the development of IBM watsonx Orchestrate.
                   </ul>
@@ -258,7 +277,7 @@
                   <ul style="margin:0;padding-left:20px;">
                       <papertitle>Flinders University, Adelaide</papertitle> (Jan 2026 - Mar 2026) <br>
                       Visiting Scholar <br>
-                      Research visit at Flinders University (host: Dr. Matthew Stephenson). Exploring research topics in robotics.
+                      Began <a href="#eafg">research on using visual evidence to guide robot planning</a> (host: <a href="https://matthewstephenson.info/">Dr. Matthew Stephenson</a>).
                   </ul>
                 </td>
               </tr>
@@ -267,7 +286,7 @@
                   <ul style="margin:0;padding-left:20px;">
                       <papertitle>CyberAgent AI Lab, Tokyo</papertitle> (July 2023 - June 2025) <br>
                       Research Intern <br>
-                      Developed a transformer-based offline RL method to control agent performance for modeling game players with diverse skill levels, improving control performance by 54.9%. Implemented a reproducible workflow for transformer-based models using PyTorch and Docker on GCP. Accepted for publication in Transactions on Machine Learning Research (TMLR).
+                      Developed the <a href="#radt">Return-Aligned Decision Transformer</a>, an offline RL method for tuning an agent's performance with a target score.
                   </ul>
                 </td>
               </tr>
@@ -276,7 +295,7 @@
                   <ul style="margin:0;padding-left:20px;">
                       <papertitle>SAP, Tokyo</papertitle> (Sep 2022 - Mar 2023) <br>
                       ML Engineer Intern <br>
-                      Developed a sales prototype for stockpile measurements using 3D point cloud processing with Python and OpenCV.
+                      Built a prototype in Python and OpenCV to estimate stockpile volume by reconstructing 3D point clouds from photos.
                   </ul>
                 </td>
               </tr>
@@ -285,7 +304,7 @@
                   <ul style="margin:0;padding-left:20px;">
                       <papertitle>IBM Research, Tokyo</papertitle> (Aug 2021 - May 2022) <br>
                       Research Intern <br>
-                      Developed an RL agent that solves text-based games using external knowledge such as ConceptNet. Achieved a 17% improvement on decision making benchmarks for language models. Accepted to EMNLP and an AAAI Workshop; filed one patent application.
+                      Developed <a href="#diffg-rl">DiffG-RL</a>, an agent that uses commonsense knowledge to choose actions in text games. Co-inventor on <a href="#patents">U.S. Patent 12,555,006</a>, issued in 2026.
                   </ul>
                 </td>
               </tr>
